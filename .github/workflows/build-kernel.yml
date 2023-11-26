@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: nscloud-ubuntu-22.04-amd64-32x16
+    runs-on: buildjet-32vcpu-ubuntu-2204
     name: Build Kernel by ${{ github.actor }}
     if: github.event.repository.owner.id == github.event.sender.id
     env:
